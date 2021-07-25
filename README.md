@@ -1,3 +1,3 @@
 # HelloWorld2
 
-I am jean
+I am jean and I am an instructor.
