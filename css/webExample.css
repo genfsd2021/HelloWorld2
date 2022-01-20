@@ -1,0 +1,65 @@
+/*
+All font-family to Arial, Helvetica, sans-serif;
+All Text color to #01161E
+apply box-sizing as border-box
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color:#01161E;
+    box-sizing: border-box;
+}
+
+/*
+h1 - 34pt, h2 - 20pt, h3 - 14pt
+*/
+h1 {
+    font-size: 34pt;
+}
+
+h2 {
+    font-size: 20pt;
+}
+
+h3 {
+    font-size: 14pt;
+}
+
+header {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+/* 
+links :
+all padding = 15px
+remove underline from the link
+*/
+.desktop > a {
+    padding: 15px;
+    text-decoration: none;
+}
+
+/* section 1 
+bg color = mistyrose
+image - width = 60%
+padding - top & bottom = 30px, left & right = 20px
+*/
+.section1 {
+    display: flex;
+    background-color: mistyrose;
+    padding: 30px 20px;
+}
+
+

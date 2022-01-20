@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Exercise 1</title>
+
+    <style>
+
+        .flex-container {
+            display: flex;
+            height: 400px;
+        }
+
+        /* Set the flex items to width 200px each */
+        .flex-container > div {
+            flex-basis: 200px;
+        }
+
+        /* Fill the flex items with the respective color - green white red*/
+        #box1 {
+            background-color: green;
+        }
+
+        #box2 {
+            background-color: white;
+        }
+
+        #box3 {
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="flex-container">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+    </div>
+
+</body>
+</html>

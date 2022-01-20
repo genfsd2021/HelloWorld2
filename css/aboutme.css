@@ -1,0 +1,117 @@
+/* 
+All font family to  Arial, Helvetica, sans-serif 
+All Set Margin to 0 (reset.css will be covered later)
+Set all the sections box-sizing to border-box
+*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+header
+bg color - #1abc9c
+text color - white
+align text to center
+all padding 60px
+*/
+
+header {
+    background-color: #1abc9c;
+    color: #fff;
+    text-align: center;
+    padding: 60px;
+}
+
+/*
+Nav
+- overall bg color - #333
+
+Nav Link
+- text color to #fff
+- padding top & botton = 14px, left & right = 20px
+- align text to center
+- remove the underline of the link
+
+Hover over Nav
+- bg color #ddd
+- text color #000
+*/
+
+nav {
+    display: flex;
+    background-color: #333;
+}
+
+nav > a {
+    color: #fff;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav > a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+/*
+Main content with aside and section as row
+
+*/
+
+main {
+    display: flex;
+}
+
+/*
+aside -
+flex-basis = 30% of the total width
+bg color = #f1f1f1
+padding = 20px
+*/
+aside {
+    flex-basis: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/*
+section - padding 20px
+*/
+section {
+    padding: 20px;
+}
+
+.fakeimg, .fakeimg2 {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0px;
+}
+
+footer {
+    background-color: #ddd;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 
+Different layout for different breakpoint (e.g. 720px)
+*/
+
+@media screen and (max-width: 720px) 
+{
+    /* Whatever CSS styling in the {} will be apply to device breakpoint <=720px */
+    nav {
+        flex-direction: column;
+    }
+
+    aside {
+        display: none;
+    }
+
+}
+
